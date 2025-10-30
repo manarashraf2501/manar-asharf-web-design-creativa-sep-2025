@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container {
+  background-color: #bbb;
+  padding: 50px;
+  text-align: center;
+  height: 80vh;
+}
+
+.card-blue {
+  width: 20%;
+  margin: auto;
+  background: blue;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+}
+ i{
+padding: 4%;
+font-size: 60px;
+}
+
+.white-card {
+  width: 20%;
+  height: 0;
+  margin: auto;
+  transition: 0.3s linear;
+  background: white;
+  box-shadow: 0 0 14px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+.card-blue:hover + .white-card {
+padding: 20px;
+height: 100px;
+}
+
+.white-card hr {
+  width: 20%;
+  border: 1px solid blue;
+  margin:  20px auto;
+}
+
+.white-card h3 {
+  margin: 5px 0;
+  padding: 0;
+}
