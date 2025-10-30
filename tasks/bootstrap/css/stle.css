@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container h5, h4, h3{
+font-size: 15px;
+font-weight: bold;
+}
+.container p{
+    font-size: 13px;
+    color: rgb(173, 173, 173);
+}
+.icons{
+display: flex;
+justify-content: center;
+}
+.icons i{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 30px;
+color:rgb(221, 221, 221);
+width: 35px;
+height: 35px;
+border-radius: 50%;
+border: 1px solid  rgb(221, 221, 221);
+}
+.card button{
+    top: 5%;
+    left: 8%;
+    background-color: white;
+    color:blueviolet;
+    transition: 2s;
+
+}
+.card:hover button{
+    background-color: black;
+    color: white;
+}
+
