@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.text-red{
+  color: red;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.hero{
+  background-color: rgb(207, 244, 252);
+  padding: 40px;
+  text-align: center;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.profile-header {
+  height: 120px;
+  background-image: url('imgs/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.list:hover a{
+    color: blue;
+}
+
+
+
+.card-icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  background-color: #bbbbbb13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-content:hover{
+    background-color: #dfdfdfe7;
+    border-radius: 12px;
+}
+.content-icon:hover{
+    background-color: #dfdfdfe7;
+    border-radius: 12px;
+}
+.dentest{
+  position: relative;
+}
+.dentest::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+left: 20%;
+top: 40%;
+}
+
+
+.mar,.mas,.may{
+  position: relative;
+}
+
+.mar::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+right: 3px;
+top: -1px;
+}
+.may::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: red;
+position: absolute;
+right: 3px;
+top: -1px;
+}
+.mas::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: green;
+position: absolute;
+right: 3px;
+top: -1px;
+}

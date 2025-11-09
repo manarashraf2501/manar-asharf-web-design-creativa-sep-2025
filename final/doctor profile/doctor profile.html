@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doccure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="css/style.css">  
+</head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm px-3 py-2">
+  <div class="container-fluid">
+
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://doccure.dreamstechnologies.com/react/template/assets/logo-D7ILE4zi.svg" alt="logo" class="w-25">
+    </a>
+
+    <!-- toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- nav links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto me-3 align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" href="#">Who we are</a></li>
+            <li><a class="dropdown-item" href="#">Our history</a></li>
+            <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="doctorsDropdown" role="button" data-bs-toggle="dropdown">Doctors</a>
+          <ul class="dropdown-menu" aria-labelledby="doctorsDropdown">
+            <li><a class="dropdown-item" href="#">Dental Care</a></li>
+            <li><a class="dropdown-item" href="#">Skin Health</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="patientsDropdown" role="button" data-bs-toggle="dropdown">Patients</a>
+          <ul class="dropdown-menu" aria-labelledby="patientsDropdown">
+            <li><a class="dropdown-item" href="#">Find a Doctor</a></li>
+            <li><a class="dropdown-item" href="#">Join Our Team</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pharmacyDropdown" role="button" data-bs-toggle="dropdown">Pharmacy</a>
+          <ul class="dropdown-menu" aria-labelledby="pharmacyDropdown">
+            <li><a class="dropdown-item" href="#">Shop Online</a></li>
+            <li><a class="dropdown-item" href="#">Offers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+            <li><a class="dropdown-item" href="#">Articles</a></li>
+            <li><a class="dropdown-item" href="#">News</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown">Admin</a>
+          <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- icons section -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+        <a href="#" class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#3cb94b"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg>
+</a>
+        </a>
+
+        <a href="#" class=" may rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+        </a>
+
+        <a href="#" class=" mas rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000"><path d="M240-384h480v-72H240v72Zm0-132h480v-72H240v72Zm0-132h480v-72H240v72ZM864-96 720-240H168q-29.7 0-50.85-21.15Q96-282.3 96-312v-480q0-29.7 21.15-50.85Q138.3-864 168-864h624q29.7 0 50.85 21.15Q864-821.7 864-792v696ZM168-312h582l42 42v-522H168v480Zm0 0v-480 480Z"/></svg>
+        </a>
+
+        <a href="#" class=" mar rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000"><path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>        </a>
+      </div>
+
+
+      <div class="profile-icon">
+       <a href=""> <img src="css/imgs/dr.jpeg" alt="profile icon" width="40px" height="40px" class="rounded-circle ms-2"></a>
+
+    </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- hero section -->
+    <section class="hero">
+      <span><i class="fa-solid fa-house" style="color: #0149c6;"></i></span> <span class="fs-4">></span> <span>patient</span> <span class="fs-4">></span> <span>doctor profile1</span>
+      <h2>Doctor profile</h2>
+
+    </section>
+
+<!-- Doctor Profile Section -->
+<div class="container">
+ <div class="row">
+<div class="col-12">
+  
+    <div class="card flex-row justify-content-between mt-5">
+      <div class="left d-flex flex-row p-3 gap-3">
+        <img src="css/imgs/dr.jpeg" alt="dr-profile" width="200px" height="200px" class="rounded-2">
+        <div class="content d-flex flex-column">
+    <h2>dr. darren elder</h2>
+    <p>BDS, MDS - Oral & Maxillofacial Surgery</p>
+    <span> Dentist</span>
+    <div class="ratings d-flex flex-row gap-2">
+    <img src="css/imgs/Frame 14.png" alt="rate" width="80">
+    <span> (35)</span>
+    </div>
+    <div class="location">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B7B7B7"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>    <span> newyork, USA </span>
+    </div>
+    <div class="images d-flex flex-row gap-2 py-4">
+<img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-01-CiUCRVgG.jpg" alt="img-1" width="50px" height="50px" class="rounded-2">
+<img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-02-CidU_YCh.jpg" alt="img-2" width="50px" height="50px" class="rounded-2">
+<img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-03-CsVmaQqg.jpg" alt="img-3" width="50px" height="50px" class="rounded-2">
+<img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-04-BgySQc8e.jpg" alt="img-4" width="50px" height="50px" class="rounded-2">
+</div>
+<div class="tabs d-flex flex-row gap-2">
+
+
+    <div class=" name ">dental fillings</div>
+
+    <div class=" name">teeth whitening</div>
+    </div>
+        </div>
+</div>
+      
+
+
+<div class="right d-flex flex-column gap-3 p-3">
+  <div class="rating d-flex flex-row gap-2 align-items-center">
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg> <span>99%</span>
+</div>
+<div class="rating d-flex flex-row gap-2 align-items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg> <span>35 feedbacks</span>
+</div>
+<div class="rating d-flex flex-row gap-2 align-items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg> <span> newyork, USA</span>
+</div>
+<div class="rating d-flex flex-row gap-2 align-items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg> <span>$100 dollars per hour</span>
+</div>
+<div class="contacts d-flex flex-row gap-2 pt-4">
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg></a>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg></a>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg></a>
+</div>
+<a href=""><button class="btn btn-primary rounded-pill"> book appointment</button></a>
+</div>
+</div>
+ </div>
+ </div>
+</div>
+ </div>
+ <!--info section-->
+  <div class="container py-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card shadow-sm p-4">
+        
+
+        <ul class="nav nav-underline mb-4" id="profileTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="hours-tab" data-bs-toggle="tab" data-bs-target="#hours" type="button" role="tab" aria-controls="hours" aria-selected="false">Business Hours</button>
+          </li>
+        </ul>
+
+
+        <div class="tab-content" id="profileTabsContent">
+
+          <!--  Overview -->
+          <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+            <h5>About Me</h5>
+<p class="lh-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5 class="mt-4">Education</h5>
+            <ul class="list-unstyled border-start ps-3">
+              <li class="mb-3">
+                <strong>American Dental Medical University</strong><br>
+                BDS <small class="text-muted d-block">1998 - 2003</small>
+              </li>
+              <li>
+                <strong>American Dental Medical University</strong><br>
+                MDS <small class="text-muted d-block">2003 - 2005</small>
+              </li>
+            </ul>
+
+
+             <h5 class="mt-4">Work Experience</h5>
+            <ul class="list-unstyled border-start ps-3">
+              <li class="mb-3">
+                <strong>Glowing Smiles Family Dental Clinic</strong><br>
+                <small class="text-muted d-block">2010 - Present (5 years)</small>
+              </li>
+              <li>
+                <strong>Comfort Care Dental Clinic</strong><br>
+                <small class="text-muted d-block">2007 - 2010 (3 years)</small>
+              </li>
+                <li>
+                <strong>Dream Smile Dental Practice</strong><br>
+                <small class="text-muted d-block">2005 - 2007 (2 years)</small>
+              </li>
+            </ul>
+
+
+            <h5 class="mt-4">awards</h5>
+            <ul class="list-unstyled border-start ps-3">
+              <li class="mb-3">
+                <small class="text-primary">July 2019</small><br>
+                <strong>Humanitarian Award</strong><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </li>
+              <li>
+                <small class="text-primary">March 2011</small><br>
+                <strong>Certificate for International Volunteer Service</strong><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </li>
+                <li>
+                <small class="text-primary">May 2008</small><br>
+                <strong>The Dental Professional of The Year Award</strong><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </li>
+            </ul>
+       <div class="overview-sections">
+
+             
+              <div class="section-block">
+                <h6 class="section-title fw-bold">Services</h6>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <p><i class="bi bi-arrow-right-short"></i> Tooth cleaning</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Composite Bonding</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Root Canal Therapy</p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p><i class="bi bi-arrow-right-short"></i> Fissure Sealants</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Implants</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Surgical Extractions</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-block">
+                <h6 class="section-title fw-bold">Specializations</h6>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <p><i class="bi bi-arrow-right-short"></i> Children Care</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Orthodontist</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Dental Care</p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p><i class="bi bi-arrow-right-short"></i> Periodontist</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Oral and Maxillofacial Surgery</p>
+                    <p><i class="bi bi-arrow-right-short"></i> Prosthodontics</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Location -->
+          <div id="location" class="tab-pane fade" role="tabpanel" aria-labelledby="location-tab">
+  <div class="container py-4">
+    <div class="row gy-4">
+
+      <div class="col-12">
+        <div class="card d-flex flex-row justify-content-between align-items-start p-3 shadow-sm border-0 rounded-3">
+          <div class="left d-flex flex-row gap-3">
+            <div class="content d-flex flex-column">
+              <h2 class="h5 mb-1">Smile Cute Dental Care Center</h2>
+              <p class="mb-2 text-muted">MDS - Periodontology and Oral Implantology, BDS</p>
+              <div class="ratings d-flex align-items-center gap-2 mb-2">
+                <img src="css/imgs/Frame 14.png" alt="rate" width="90">
+                <span>(4)</span>
+              </div>
+              <div class="location d-flex align-items-start gap-2 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#B7B7B7">
+                  <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+                </svg>
+                <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
+              </div>
+              <a href="#" class="text-primary small">Get directions</a>
+              <div class="images d-flex flex-row gap-2 py-3">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-01-CiUCRVgG.jpg" alt="img-1" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-02-CidU_YCh.jpg" alt="img-2" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-03-CsVmaQqg.jpg" alt="img-3" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-04-BgySQc8e.jpg" alt="img-4" width="50" height="50" class="rounded-2">
+              </div>
+            </div>
+          </div>
+          <div class="right d-flex flex-column align-items-end text-end">
+            <div>
+              <strong>Mon - Sat</strong><br>
+              <small>10:00 AM - 2:00 PM</small><br>
+              <small>4:00 PM - 9:00 PM</small>
+            </div>
+            <div class="mt-2">
+              <strong>Sun</strong><br>
+              <small>10:00 AM - 2:00 PM</small>
+            </div>
+        
+          </div>
+           <div class="price mt-3">
+              <strong>$250</strong>
+            </div>
+        </div>
+      </div>
+         
+
+      <div class="col-12">
+        <div class="card d-flex flex-row justify-content-between align-items-start p-3 shadow-sm border-0 rounded-3">
+          <div class="left d-flex flex-row gap-3">
+            <div class="content d-flex flex-column">
+              <h2 class="h5 mb-1">The Family Dentistry Clinic</h2>
+              <p class="mb-2 text-muted">MDS - Periodontology and Oral Implantology, BDS</p>
+              <div class="ratings d-flex align-items-center gap-2 mb-2">
+                <img src="css/imgs/Frame 14.png" alt="rate" width="90">
+                <span>(4)</span>
+              </div>
+              <div class="location d-flex align-items-start gap-2 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#B7B7B7">
+                  <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+                </svg>
+                <span>2286 Sundown Lane, Austin, Texas 78749, USA</span>
+              </div>
+              <a href="#" class="text-primary small">Get directions</a>
+              <div class="images d-flex flex-row gap-2 py-3">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-01-CiUCRVgG.jpg" alt="img-1" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-02-CidU_YCh.jpg" alt="img-2" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-03-CsVmaQqg.jpg" alt="img-3" width="50" height="50" class="rounded-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/assets/feature-04-BgySQc8e.jpg" alt="img-4" width="50" height="50" class="rounded-2">
+              </div>
+            </div>
+          </div>
+          <div class="right d-flex flex-column align-items-end text-end">
+            <div>
+              <strong>Tue - Fri</strong><br>
+              <small>11:00 AM - 1:00 PM</small><br>
+              <small>6:00 PM - 11:00 PM</small>
+            </div>
+            <div class="mt-2">
+              <strong>Sat - Sun</strong><br>
+              <small>8:00 AM - 10:00 AM</small><br>
+              <small>3:00 PM - 7:00 PM</small>
+            </div>
+            
+          </div>
+          <div class="price mt-3">
+              <strong>$350</strong>
+            </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+          <!-- Reviews -->
+    <!-- Reviews -->
+<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+  <div class="container">
+
+    <!-- Review 1 -->
+    <div class="review mt-3">
+      <div class="d-flex flex-row align-items-start">
+        <img src="https://doccure.dreamstechnologies.com/react/template/assets/patient-BuCIyGRS.jpg"
+             alt="review-1" width="40" height="40" class="rounded-circle me-3">
+
+        <div class="information flex-grow-1">
+          <h5>Richard Wilson</h5>
+          <span class="text-muted d-block">Reviewed 2 Days ago</span>
+          <span class="text-primary d-block my-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="blue">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg>
+            I recommend the doctor
+          </span>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="stars ms-auto">
+          <img src="css/imgs/Frame 14.png" alt="rate-stars">
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
+        <a href="#" class="text-primary text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="blue">
+            <path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/>
+          </svg>
+          Reply
+        </a>
+
+        <div class="d-flex align-items-center gap-2">
+          <span>Recommended?</span>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg> yes
+          </button>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000">
+              <path d="M240-816h456v480L408-48l-32-22q-17-12-26-30.5t-5-38.5l1-5 38-192H120q-30 0-51-21t-21-51v-57q0-8 1.5-14.5T54-493l119-279q8-20 26.5-32t40.5-12Z"/>
+            </svg> no
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review mt-3 border-bottom">
+      <div class="d-flex flex-row align-items-start">
+        <img src="https://doccure.dreamstechnologies.com/react/template/assets/patient-BuCIyGRS.jpg"
+             alt="review-2" width="40" height="40" class="rounded-circle me-3">
+
+        <div class="information flex-grow-1">
+          <h5>Richard Wilson</h5>
+          <span class="text-muted d-block">Reviewed 2 Days ago</span>
+          <span class="text-primary d-block my-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="blue">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg>
+            I recommend the doctor
+          </span>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="stars ms-auto">
+          <img src="css/imgs/Frame 14.png" alt="rate-stars">
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
+        <a href="#" class="text-primary text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="blue">
+            <path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/>
+          </svg>
+          Reply
+        </a>
+
+        <div class="d-flex align-items-center gap-2">
+          <span>Recommended?</span>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg> yes
+          </button>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000">
+              <path d="M240-816h456v480L408-48l-32-22q-17-12-26-30.5t-5-38.5l1-5 38-192H120q-30 0-51-21t-21-51v-57q0-8 1.5-14.5T54-493l119-279q8-20 26.5-32t40.5-12Z"/>
+            </svg> no
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Review 3 -->
+    <div class="review mt-3 border-bottom">
+      <div class="d-flex flex-row align-items-start">
+        <img src="https://doccure.dreamstechnologies.com/react/template/assets/patient-BuCIyGRS.jpg"
+             alt="review-3" width="40" height="40" class="rounded-circle me-3">
+
+        <div class="information flex-grow-1">
+          <h5>Richard Wilson</h5>
+          <span class="text-muted d-block">Reviewed 2 Days ago</span>
+          <span class="text-primary d-block my-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="blue">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg>
+            I recommend the doctor
+          </span>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="stars ms-auto">
+          <img src="css/imgs/Frame 14.png" alt="rate-stars">
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
+        <a href="#" class="text-primary text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="blue">
+            <path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/>
+          </svg>
+          Reply
+        </a>
+
+        <div class="d-flex align-items-center gap-2">
+          <span>Recommended?</span>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+              <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Z"/>
+            </svg> yes
+          </button>
+          <button class="btn bg-transparent border border-1" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000">
+              <path d="M240-816h456v480L408-48l-32-22q-17-12-26-30.5t-5-38.5l1-5 38-192H120q-30 0-51-21t-21-51v-57q0-8 1.5-14.5T54-493l119-279q8-20 26.5-32t40.5-12Z"/>
+            </svg> no
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <div class="write-review">
+<h5> Write a review for Dr. Darren Elder</h5>
+<span> Review</span>
+
+    </div>
+
+  <div class="star-rating ms-auto d-flex" data-rating="0">
+  <span data-value="5">&#9734;</span>
+  <span data-value="4">&#9734;</span>
+  <span data-value="3">&#9734;</span>
+  <span data-value="2">&#9734;</span>
+  <span data-value="1">&#9734;</span>
+</div>
+<div class="border-bottom">
+<label for="title"> Title of your review</label><br>
+<input type="text" class="input w-100 p-1 rounded-3" placeholder="if you could say it in one sentence, what would you say?">
+<label for="title"> type your review</label><br>
+<input type="text" maxlength="100" class="input w-100 p-3 rounded-3">
+<span>100 characters remaining</span> <br>
+
+</div>
+<input type="checkbox" id="agree" class="input">
+i have read and accept Terms & Conditions <br>
+<a href="#">
+<button type="submit"
+  class="btn btn-primary rounded-5 p-2 fw-bold" tabindex="-1" role="button" aria-disabled="true" style="width: 16%;"> add review
+</button>
+</a> 
+    </div>
+
+
+  </div>
+</div>
+          <!-- Business Hours -->
+           
+          <div class="tab-pane fade" id="hours" role="tabpanel" aria-labelledby="hours-tab">
+           <div class="timeline m-auto">
+            <table class="table table-borderless">
+
+             <thead>
+               <tr>
+                 <th>today</th>
+                 <th> <div class="badge bg-success-subtle bg-opacity-75 text-success">open now</div></th>
+               </tr>
+             </thead>
+             <tbody>
+              <tr>
+
+              </tr>
+               <tr>
+                  <td>5 nov 2019</td>
+                 <td>07:00 AM - 09:00 PM</td>
+               </tr>
+               <tr class="table-group-divider">
+                 <td>tuesday</td>
+                 <td>07:00 AM - 09:00 PM</td>
+               </tr>
+               <tr>
+                 <td>wednesday</td>
+                 <td>07:00 AM - 09:00 PM</td>
+               </tr>
+               <tr>
+                 <td>thursday</td>
+                 <td>07:00 AM - 09:00 PM</td>
+               </tr>
+                <tr>
+                  <td>friday</td>
+                  <td>07:00 AM - 09:00 PM</td>
+               </tr>
+                <tr>
+                  <td>saturday</td>
+                  <td>09:00 AM - 08:00 PM</td>
+                </tr>
+                <tr>
+                  <td>sunday</td>
+                  <td><div class=" badge bg-danger-subtle bg-opacity-75 text-danger"> closed </div></td>
+               </tr>
+             </tbody>
+           </table>
+          </div>
+</div>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        <footer class="footer bg-light pt-5 bg-blue">
+  <div class="container">
+    <div class="row">
+   
+     
+
+      <!-- Company Links -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Company</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="#" class="text-muted text-decoration-none">about</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">features</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">work</a></li>
+             <li><a href="#" class="text-muted text-decoration-none">careers</a></li>
+                <li><a href="#" class="text-muted text-decoration-none">locations</a></li>
+        </ul>
+      </div>
+      <!-- treatments-->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">treatments</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="#" class="text-muted text-decoration-none">dental</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Cardiac</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Spinal Cord</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Hair Growth</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Anemia & Disorder</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Specialities -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">Specialities</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="#" class="text-muted text-decoration-none">transplant</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Cardiologist</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Oncology</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Pediatrics</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Gynacology</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- utalities -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">utalities</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="#" class="text-muted text-decoration-none">pricing</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">contact</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Request A Quote</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Premium Membership</a></li>
+          <li><a href="#" class="text-muted text-decoration-none">Integrations</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+
+      <div class="col-md-4">
+<di class="row">
+          <!-- Newsletter -->
+         <div class="col-12">
+        <h6 class="fw-bold mb-3">Newsletter</h6>
+<p> Subscribe & Stay Updated from the Doccure</p>
+        <div class="input-group mt-2">
+          <input type="email" class="form-control" placeholder="Enter Email" />
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      <!-- Contact -->
+      
+
+
+        <!-- Social Icons -->
+        <div class="mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-muted fs-5 me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-muted fs-5 me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-muted fs-5 me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-muted fs-5"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+     </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom text-center mt-4 pt-3 border-top  d-flex justify-content-between bg-blue100 p-5">
+      <p class="text-muted mb-1">
+        Copyright © 2025 Doccure. All Rights Reserved
+      </p>
+      <div class="end">
+              <a href="#" class="text-decoration-none text-muted me-2"> legal notice</a> |
+
+      <a href="#" class="text-decoration-none text-muted me-2">Privacy Policy</a> |
+      <a href="#" class="text-decoration-none text-muted ms-2">refund policy</a>
+    </div>
+    <div class="payment">
+      <img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-01.svg" alt="visa">
+      <img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-02.svg" alt="">
+<img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-03.svg" alt="discover">
+<img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-04.svg" alt="master">
+<img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-05.svg" alt="stripe">
+<img src="https://doccure.dreamstechnologies.com/react/template/src/assets/img/icons/card-06.svg" alt="paypal">
+    </div>
+  </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+  </body>
+</html>

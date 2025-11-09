@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.profile-header {
+  height: 120px;
+  background-image: url('imgs/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.list:hover a{
+    color: blue;
+}
+.card-body {
+margin-left: 30%;
+position: relative;
+}
+.card-body::before{
+    content: "\f1c5";
+     font-family: "Font Awesome 5 Free";
+     color: #9b959583;
+     font-weight: 900;
+     font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fff;
+    border-radius: 10%;
+    position: absolute;
+    top: 10%;
+    left: -40%;
+    
+    background-color: #bbbbbb13;
+}
+.dentest{
+  position: relative;
+}
+.dentest::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+left: 20%;
+top: 40%;
+}
+
+
+.hero{
+  background-color: rgb(207, 244, 252);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mar,.mas,.may{
+  position: relative;
+}
+
+.mar::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+right: 3px;
+top: -1px;
+}
+.may::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: red;
+position: absolute;
+right: 3px;
+top: -1px;
+}
+.mas::before{
+content: "";
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: green;
+position: absolute;
+right: 3px;
+top: -1px;
+}
+
+ .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tab-btn {
+      padding: 8px 14px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .tab-btn.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+  .tag {
+        background-color: #f8f9fa;
+        border-radius: 50px;
+        padding: 6px 12px;
+        margin: 4px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+      }
+      .tag i {
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .tags-input {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+      .tags-input input {
+        border: none;
+        outline: none;
+        flex: 1;
+        min-width: 120px;
+      }
+      .last-btns{
+margin-bottom: 40px;
+margin-top: 10px;
+
+      }
+
+   
