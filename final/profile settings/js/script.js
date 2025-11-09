@@ -1,21 +1,6 @@
 
 
-  // كل أزرار التابات
-  const tabs = document.querySelectorAll(".tab-btn");
-  const contents = document.querySelectorAll(".tab-content");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      // نحذف التفعيل من الكل
-      tabs.forEach(btn => btn.classList.remove("active"));
-      contents.forEach(content => content.classList.remove("active"));
-
-      // نفعّل التاب اللي المستخدم ضغط عليها
-      tab.classList.add("active");
-      const target = tab.getAttribute("data-tab");
-      document.getElementById(target).classList.add("active");
-    });
-  })
+  
  
 
 
@@ -96,6 +81,7 @@ function validateForm(event) {
 function removeMember (button){
    button.closest('.card').remove();
 }
+
 
 
 
